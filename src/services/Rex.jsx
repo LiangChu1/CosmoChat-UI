@@ -7,10 +7,9 @@
  */
 import { createContext } from "react";
 import OpenAI from "openai";
-import { OPENAI_API_KEY } from "../constants/OpenAIKey";
 
 // Initialize the OpenAI API with the provided API key
-const openai = new OpenAI({apiKey: OPENAI_API_KEY, dangerouslyAllowBrowser: true});
+const openai = new OpenAI({apiKey: process.env.REACT_APP_OPENAI_KEY, dangerouslyAllowBrowser: true});
 
 // Create a context for managing AI interactions
 export const AIContext = createContext();
@@ -65,7 +64,7 @@ export const Rex = ({ children }) => {
        });
         createMessage(chatId, completion.choices[0].message.content, "Rex");
     }
-    
+
     // Render the provider for the AI context
     return (
         <AIContext.Provider value={{ processMessageToChatGPT }}>

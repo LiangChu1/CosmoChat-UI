@@ -29,7 +29,7 @@ CosmoChat prioritizes user security and privacy. It features an intuitive and se
 2. Once your done, Open up a new terminal and begin with cloning the repository: `git clone <repository-url>`
 3. Navigate into the root project directory: `cd cosmochat-ui`
 4. Go to the OpenAI website, create an account, and get access to a project API Key (you will also need to add credit into your account to be able to use OpenAI).
-5. Go to the src/constants/OpenAIKey.jsx and put in your API key there as so: export const OPENAI_API_KEY="XXXXXX";
+5. Go to the .env file and put in your API key there as so by replacing the 'XXXXXX' with your OpenAI key;
 6. Type in `npm install` to install all of the dependencies within this project
 7. Then run `npm start`, and then your done!
 
