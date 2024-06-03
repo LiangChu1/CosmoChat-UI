@@ -1,0 +1,32 @@
+{
+    
+    "chats": [
+      {
+        "id": 1,
+        "name": "ReX",
+        "is_active": true,
+        "messages": [
+          { "sender": "ReX", "text": "Hello Antrum! I'm ReX 👋", "timestamp": "2024-05-28T10:00:00Z" },
+          { "sender": "Antrum", "text": "Hi ReX!", "timestamp": "2024-05-28T10:01:00Z" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "ReX - Dec 19, 2024",
+        "is_active": false,
+        "messages": [
+          { "sender": "ReX", "text": "Wouldn't miss an opportunity to get ReX-ited!", "timestamp": "2024-12-19T12:00:00Z" }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "ReX - Dec 18, 2024",
+        "is_active": false,
+        "messages": [
+          { "sender": "ReX", "text": "I recommend taking a course in agile methodology to get ReX-ited with this concept.", "timestamp": "2024-12-18T09:00:00Z" },
+          { "sender": "ReX", "text": "Join me to prepare with your network.", "timestamp": "2024-12-18T10:00:00Z" }
+        ]
+      }
+    ]
+  }
+  
