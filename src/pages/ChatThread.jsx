@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
-import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react";
+import { MainContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react";
 import { MessagesContext } from '../services/Messages';
 import { UserContext } from '../services/User';
 import { AIContext } from '../services/Rex';
-import { RootContainer } from '../styles/SharedStyles';
+import { ChatContainer, RootContainer } from '../styles/SharedStyles';
 import NavBarComponent from '../components/NavBarComponent';
 
 /**
@@ -50,7 +50,7 @@ function ChatThread(){
     return(
     <RootContainer>
         <NavBarComponent />
-        <div style={{position: "relative", justifyContent: "center", width: "100%", height: "100vw"}}>
+        <div style={{position: "relative", justifyContent: "center", width: "100%", flex:1}}>
             <MainContainer>
                 <ChatContainer>
                     <MessageList

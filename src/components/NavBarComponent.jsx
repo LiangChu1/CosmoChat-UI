@@ -15,7 +15,7 @@ import logo from '../assets/images/rex-icon.png';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { UserContext } from '../services/User';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -85,7 +85,7 @@ function NavBarComponent() {
         <NavBar position="static">
             <Toolbar sx={{ justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <NavLogo src={logo} alt="logo" />
+                    <Link to='/'><NavLogo src={logo} alt="logo" /></Link>
                     <Typography component="div">
                         <NavPageTitleText>REX AI Chatbot</NavPageTitleText>
                     </Typography>

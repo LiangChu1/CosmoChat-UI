@@ -57,13 +57,13 @@ const ChatActivity = () => {
     return (
         <RootContainer>
             <NavBarComponent />
-            <Container style={{padding: '0'}}>
+            <Container style={{padding: '0', width: '100%'}}>
                 <MainTitleText>Chat Statistics</MainTitleText>
                 <SubTitleText>Monthly Usage</SubTitleText>
-                <Grid container item style={{display:'flex', justifyContent: 'center'}}>
+                <Grid container item style={{display:'flex', justifyContent: 'center', width:'100%'}}>
                     <BarChart
-                        width={500}
-                        height={300}
+                        width={350}
+                        height={400}
                         data={chartData}
                         margin={{
                             top: 5, right: 30, left: 20, bottom: 5,
