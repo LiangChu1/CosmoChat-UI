@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getAuth } from 'firebase/auth';
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration (replace this if you want to point to a separate project)
 const firebaseConfig = {
   apiKey: "AIzaSyAxH86EQsB7i9mSZZjWJNhY3SQcJdyBRoo",
   authDomain: "rex-chatbot-c1051.firebaseapp.com",
@@ -14,6 +14,7 @@ const firebaseConfig = {
   appId: "1:303369026482:web:ec3bf95876da1da84802ab",
   measurementId: "G-MTNF6GKR5S"
 };
+//End of replacement
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
